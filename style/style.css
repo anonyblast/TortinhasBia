@@ -1,0 +1,230 @@
+html {
+	height: 100%;
+	width: 100%;
+	font-family: sans-serif;
+	color: white;
+	background-color: #5213e8;
+}
+
+
+.imglogo {
+    width: 250px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    background-color: #f445d3;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    width: 100%;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    margin: 50px;
+    color: white;
+    font-size: medium;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);     
+}
+
+.item {
+    position: relative;
+    width: 380px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    background-color: #f445d3;
+    border-radius: 5%;
+}
+
+.item img {
+    position: absolute;
+    top: 10px;
+    width: 90%; /* ocupar toda a largura do card */
+    height: auto; /* ajuste a altura proporcionalmente */
+    border-radius: 5%;
+}
+
+.content {
+    margin-top: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 40px;
+}
+
+.moreaboutme {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.aboutme, .location {
+    width: 400px;
+    height: 400px;
+    background-color: #f445d3;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+}
+
+.aboutme > p {
+    width: 350px;
+}
+
+button, .purchase {
+    background-color: #5213e8;
+    width: 250px;
+    height: 50px;
+    margin-top: 10px;
+    border: 0px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 70px;
+}
+
+.phrase {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    animation: slideText 10s linear infinite;
+    margin-top: 30px;
+}
+
+@keyframes slideText {
+0% {
+    transform: translateX(100%);
+}
+100% {
+    transform: translateX(-100%);
+}
+}
+
+@media screen and (max-width: 767px) {
+header {
+    padding: 20px;
+}
+
+.imglogo {
+    width: 200px;
+}
+
+nav {
+    display: none;
+}
+
+.grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.item img {
+    position: inherit;
+    width: 80%;
+    top: 5px;
+}
+
+.item {
+    width: 100%;
+    height: max-content;
+    margin: 20px 0;
+}
+
+.content {
+    margin-top: 40px;
+    max-width: 100%;
+}
+
+.moreaboutme {
+    flex-direction: column;
+}
+
+.aboutme {
+    width: 100%;
+    margin: 10% 0;
+}
+
+.location {
+    height: max-content;
+    width: 100%;
+    margin: 10% 0;
+    border-radius: 5px;
+}
+
+button {
+    margin: 20px;
+}
+
+.aboutme > p {
+    width: auto;
+}
+
+iframe {
+    display: none;
+}
+
+footer {
+    flex-direction: column;
+    padding: 20px;
+}
+
+.phrase {
+    position: static;
+    width: auto;
+    animation: none;
+    margin-top: 20px;
+}
+}
