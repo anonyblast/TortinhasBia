@@ -4,6 +4,7 @@ html {
 	font-family: sans-serif;
 	color: white;
 	background-color: #5213e8;
+    text-align: center;
 }
 
 
@@ -155,15 +156,19 @@ footer {
 
 @media screen and (max-width: 767px) {
 header {
-    padding: 20px;
+    padding: 0;
 }
 
 .imglogo {
-    width: 200px;
+    width: 250px;
 }
 
 nav {
     display: none;
+}
+
+main {
+    margin: 0;
 }
 
 .grid {
@@ -174,7 +179,7 @@ nav {
 .item img {
     position: inherit;
     width: 80%;
-    top: 5px;
+    top: 20px;
 }
 
 .item {
